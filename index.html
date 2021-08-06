@@ -1,38 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<title>My Aesthethicc Startpage</title>
-<link rel="stylesheet" href="stylesheet.css" />
-</head>
-<body>
-	<div align="center">
-		<img src="https://media1.tenor.com/images/097379e929e902009c933809fc3a19d8/tenor.gif?itemid=14579527" align="center">
-	</div>
-	<p>提灯<br>ちょうちん</p>
-	<div class="links-wrapper">
-		<fieldset>
-			<legend>projects</legend>
-			<ul>
-				<li><a href="https://github.com/Gitleptune/lantern-theme">lantern-theme</a></li>
-				<li><a href="https://github.com/besterestmark/bettermark">bettermark</a></li>
-			</ul>
-		</fieldset>
-		<fieldset>
-			<legend>reddit</legend>
-			<ul>
-				<li><a href="https://reddit.com/r/all">r/all</a></li>
-				<li><a href="https://reddit.com/r/unixporn">r/unixshowcase</a></li>
-				<li><a href="https://reddit.com/r/196">r/196</a></li>
-			</ul>
-		</fieldset>
-		<fieldset>
-			<legend>social</legend>
-			<ul>
-				<li><a href="https://mail.protonmail.com/u/0/inbox">protonmail</a></li>
-				<li><a href="https://boards.4channel.org/g/"></a>/g/</li>
-			</ul>
-		</fieldset>
-	</div>
-</body>
-</html>
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@5.2/distr/fira_code.css);
+:root {
+	--background: #261b17;
+	--header: #1b110e;
+	--background-alt: #291812;
+	--hover: #532f28;
+	--highlight: #f99666;
+	--highlight-alt: #fad256;
+	--ui: #e35b15;
+	--ui-alt: #fabc2c;
+	--onclick: #e86420;
+	--visited: #e04220;
+	--text: #e4cbb3;
+	--red-dark: #e01d1d;
+}
+::-webkit-scrollbar {
+	display: none !important;
+	width: 0px;
+}
+*, a, body {
+	font-family: 'Fira Code', monospace;
+	font-weight: 300;
+	background-color: var(--background);
+	color: var(--text);
+	text-transform: lowercase; /* make everythign aesthethically lowercase */
+	text-decoration: none;
+}
+a:hover {
+	color: var(--onclick)
+}
+/* Weeb text become aesthethiccer */
+p:first-of-type {
+	text-align: center;
+	font-size: 1.7em;
+	font-weight: 600;
+	text-shadow: 3px 3px 5px var(--ui);
+}
+p:nth-child(2) {
+	text-align: center;
+	margin-top: -0.5em;
+	font-size: 2.3em;
+	font-weight: 600;
+	text-shadow: 3px 3px 5px var(--ui-alt);
+}
+div > img {
+	margin: -1em 0em 1em 0em;
+	filter: sepia(15%) /* make image more aestheticc */
+}
+/* Links boxes wrapper */
+body div:last-child{
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
+}
+/* Link Box */
+body div:last-child > fieldset {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin: 0.5em;
+	padding: 1.41em;
+	border: 1px solid var(--text);
+}
+/* Mini Heading in border */
+body div:last-child > fieldset legend {
+	text-align: center;
+	margin-bottom: -0.5em;
+	font-weight: 600;
+}
+/* Remove bullet points */
+body div:last-child > fieldset > ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
