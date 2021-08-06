@@ -24,8 +24,9 @@ a:hover {
 p {
 	text-align: center;
 	font-weight: 600;
-	font-size: 2em;
+	font-size: 1.8em;
 	text-shadow: 3px 3px 5px var(--onclick);
+	margin: -0em 0em 1em 0em;
 }
 img {
 	margin: -1em 0em 1em 0em;
@@ -46,9 +47,9 @@ div:last-child > fieldset {
 	justify-content: center;
 	text-align: center;
 	margin: 0.5em;
-	padding: 1.4em;
+	padding: 1.35em;
 	border: 1px solid var(--text);
-	box-shadow: 9px 9px 7px 2px var(--header);
+	box-shadow: 8px 8px 7px 2px var(--header);
 }
 /* Mini Heading in border */
 div:last-child > fieldset legend {
