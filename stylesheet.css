@@ -10,13 +10,6 @@
 	--onclick: #e86420;
 	--visited: #e04220;
 	--text: #e4cbb3;
-	--green-light: #82a23a;
-	--green-dark: #4d772d;
-	--blue-light: #66a4a4;
-	--blue-dark: #4395a3;
-	--purple-light: #c888e8;
-	--purple-dark: #b666e6;
-	--pink-light: #fab2c2;
 	--red-dark: #e01d1d;
 }
 ::-webkit-scrollbar {
@@ -41,16 +34,17 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	text-align: center;
 	margin: 0.5em;
-	padding: 1.4em;
+	padding: 1.41em;
 	border: 1px solid var(--text);
 }
+/* Mini Heading in border */
 .links-wrapper > fieldset legend {
 	text-align: center;
 	margin-bottom: -0.5em;
 	font-weight: 600;
 }
-
 /* Remove bullet points */
 .links-wrapper > fieldset > ul {
 	list-style: none;
