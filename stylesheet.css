@@ -2,16 +2,10 @@
 :root {
 	--background: #261b17;
 	--header: #1b110e;
-	--background-alt: #291812;
-	--hover: #532f28;
-	--highlight: #f99666;
-	--highlight-alt: #fad256;
 	--ui: #e35b15;
 	--ui-alt: #fabc2c;
 	--onclick: #e86420;
-	--visited: #e04220;
 	--text: #e4cbb3;
-	--red-dark: #e01d1d;
 }
 ::-webkit-scrollbar {
 	display: none !important;
@@ -28,48 +22,50 @@
 a:hover {
 	color: var(--onclick)
 }
-/* Weeb text become aesthethiccer */
-p:first-of-type {
+/* "Lantern" in kanji and hiragana become aesthethiccer */
+p {
 	text-align: center;
-	font-size: 1.7em;
 	font-weight: 600;
+
+}
+p:nth-child(1) {
+	font-size: 1.7em;
 	text-shadow: 3px 3px 5px var(--ui);
 }
-p:nth-child(2) {
-	text-align: center;
+p + p {
 	margin-top: -0.5em;
 	font-size: 2.3em;
-	font-weight: 600;
 	text-shadow: 3px 3px 5px var(--ui-alt);
 }
-div > img {
+img {
 	margin: -1em 0em 1em 0em;
 	filter: sepia(15%) /* make image more aestheticc */
 }
 /* Links boxes wrapper */
-body div:last-child{
+div:last-child{
 	display: flex;
 	flex-direction:row;
 	justify-content: center;
 }
 /* Link Box */
-body div:last-child > fieldset {
+div:last-child > fieldset {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
 	margin: 0.5em;
-	padding: 1.41em;
+	padding: 1.4em;
 	border: 1px solid var(--text);
+	box-shadow: 9px 9px 7px 2px var(--header);
 }
 /* Mini Heading in border */
-body div:last-child > fieldset legend {
+div:last-child > fieldset legend {
 	text-align: center;
 	margin-bottom: -0.5em;
 	font-weight: 600;
 }
 /* Remove bullet points */
-body div:last-child > fieldset > ul {
+div:last-child > fieldset > ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
