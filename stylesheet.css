@@ -17,30 +17,43 @@
 	display: none !important;
 	width: 0px;
 }
-/* @font-face {
-	font-family: 'Fira Code';
-
-} */
 *, a, body {
 	font-family: 'Fira Code', monospace;
 	font-weight: 300;
 	background-color: var(--background);
 	color: var(--text);
 	text-transform: lowercase; /* make everythign aesthethically lowercase */
+	text-decoration: none;
 }
-/* Weeb text become pretty */
+a:hover {
+	color: var(--onclick)
+}
+/* Weeb text become aesthethiccer */
 p:first-of-type {
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.7em;
+	font-weight: 600;
+	text-shadow: 3px 3px 5px var(--ui);
+}
+p:nth-child(2) {
+	text-align: center;
+	margin-top: -0.5em;
+	font-size: 2.3em;
+	font-weight: 600;
+	text-shadow: 3px 3px 5px var(--ui-alt);
+}
+div > img {
+	margin: -1em 0em 1em 0em;
+	filter: sepia(15%) /* make image more aestheticc */
 }
 /* Links boxes wrapper */
-.links-wrapper {
+body div:last-child{
 	display: flex;
 	flex-direction:row;
 	justify-content: center;
 }
 /* Link Box */
-.links-wrapper > fieldset {
+body div:last-child > fieldset {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -50,13 +63,13 @@ p:first-of-type {
 	border: 1px solid var(--text);
 }
 /* Mini Heading in border */
-.links-wrapper > fieldset legend {
+body div:last-child > fieldset legend {
 	text-align: center;
 	margin-bottom: -0.5em;
 	font-weight: 600;
 }
 /* Remove bullet points */
-.links-wrapper > fieldset > ul {
+body div:last-child > fieldset > ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
