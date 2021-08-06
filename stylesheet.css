@@ -2,7 +2,6 @@
 :root {
 	--background: #261b17;
 	--header: #1b110e;
-	--ui-alt: #fabc2c;
 	--onclick: #e86420;
 	--text: #e4cbb3;
 }
@@ -26,7 +25,7 @@ p {
 	text-align: center;
 	font-weight: 600;
 	font-size: 2em;
-	text-shadow: 3px 3px 5px var(--ui-alt);
+	text-shadow: 3px 3px 5px var(--onclick);
 }
 img {
 	margin: -1em 0em 1em 0em;
@@ -38,6 +37,7 @@ div:last-child {
 	flex-direction:row;
 	justify-content: center;
 }
+/* Link Box */
 div:last-child > fieldset {
 	display: flex;
 	flex-direction: column;
