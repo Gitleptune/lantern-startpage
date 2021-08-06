@@ -29,13 +29,15 @@ p {
 }
 img {
 	margin: -1em 0em 1em 0em;
-	filter: sepia(15%) /* make image more aestheticc */
+	filter: sepia(15%); /* make image more aestheticc */
+	max-width: 100%;
 }
 /* Links boxes wrapper */
 div:last-child {
 	display: flex;
 	flex-direction:row;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 /* Link Box */
 div:last-child > fieldset {
