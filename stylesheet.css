@@ -1,3 +1,4 @@
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@5.2/distr/fira_code.css);
 :root {
 	--background: #261b17;
 	--header: #1b110e;
@@ -16,11 +17,15 @@
 	display: none !important;
 	width: 0px;
 }
-* {
+/* @font-face {
 	font-family: 'Fira Code';
+
+} */
+* {
+	font-family: 'Fira Code', monospace;
 	font-weight: 300;
 	background-color: var(--background);
-	color: var(--text);
+	color: var(--text) !important;
 	text-transform: lowercase; /* make everythign aesthethically lowercase */
 }
 /* Links boxes wrapper */
