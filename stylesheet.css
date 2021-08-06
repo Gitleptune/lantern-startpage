@@ -2,7 +2,6 @@
 :root {
 	--background: #261b17;
 	--header: #1b110e;
-	--ui: #e35b15;
 	--ui-alt: #fabc2c;
 	--onclick: #e86420;
 	--text: #e4cbb3;
@@ -22,19 +21,11 @@
 a:hover {
 	color: var(--onclick)
 }
-/* "Lantern" in kanji and hiragana become aesthethiccer */
+/* "Lantern" in kanji become aesthethiccer */
 p {
 	text-align: center;
 	font-weight: 600;
-
-}
-p:nth-child(1) {
-	font-size: 1.7em;
-	text-shadow: 3px 3px 5px var(--ui);
-}
-p + p {
-	margin-top: -0.5em;
-	font-size: 2.3em;
+	font-size: 2em;
 	text-shadow: 3px 3px 5px var(--ui-alt);
 }
 img {
@@ -42,12 +33,11 @@ img {
 	filter: sepia(15%) /* make image more aestheticc */
 }
 /* Links boxes wrapper */
-div:last-child{
+div:last-child {
 	display: flex;
 	flex-direction:row;
 	justify-content: center;
 }
-/* Link Box */
 div:last-child > fieldset {
 	display: flex;
 	flex-direction: column;
