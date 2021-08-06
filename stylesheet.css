@@ -1,0 +1,59 @@
+:root {
+	--background: #261b17;
+	--header: #1b110e;
+	--background-alt: #291812;
+	--hover: #532f28;
+	--highlight: #f99666;
+	--highlight-alt: #fad256;
+	--ui: #e35b15;
+	--ui-alt: #fabc2c;
+	--onclick: #e86420;
+	--visited: #e04220;
+	--text: #e4cbb3;
+	--green-light: #82a23a;
+	--green-dark: #4d772d;
+	--blue-light: #66a4a4;
+	--blue-dark: #4395a3;
+	--purple-light: #c888e8;
+	--purple-dark: #b666e6;
+	--pink-light: #fab2c2;
+	--red-dark: #e01d1d;
+}
+::-webkit-scrollbar {
+	display: none !important;
+	width: 0px;
+}
+* {
+	font-family: 'Fira Code';
+	font-weight: 300;
+	background-color: var(--background);
+	color: var(--text);
+	text-transform: lowercase; /* make everythign aesthethically lowercase */
+}
+/* Links boxes wrapper */
+.links-wrapper {
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
+}
+/* Link Box */
+.links-wrapper > fieldset {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0.5em;
+	padding: 1.4em;
+	border: 1px solid var(--text);
+}
+.links-wrapper > fieldset legend {
+	text-align: center;
+	margin-bottom: -0.5em;
+	font-weight: 600;
+}
+
+/* Remove bullet points */
+.links-wrapper > fieldset > ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
