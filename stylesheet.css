@@ -21,12 +21,17 @@
 	font-family: 'Fira Code';
 
 } */
-* {
+*, a, body {
 	font-family: 'Fira Code', monospace;
 	font-weight: 300;
 	background-color: var(--background);
-	color: var(--text) !important;
+	color: var(--text);
 	text-transform: lowercase; /* make everythign aesthethically lowercase */
+}
+/* Weeb text become pretty */
+p:first-of-type {
+	text-align: center;
+	font-size: 1.5em;
 }
 /* Links boxes wrapper */
 .links-wrapper {
