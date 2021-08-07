@@ -33,7 +33,7 @@ h1 {
 }
 img {
 	margin: 0rem 0rem 1rem 0rem;
-	filter: sepia(22%); /* make image more aestheticc */
+	filter: sepia(-35%);
 	max-width: 100%;
 }
 /* Links boxes wrapper */
@@ -58,6 +58,7 @@ fieldset {
 legend {
 	font-weight: 600;
 	margin: 0;
+	margin: 0rem 0rem -0.4rem 0rem;
 }
 /* Remove bullet points */
 ul {
