@@ -13,7 +13,7 @@
 * {
 	font-family: 'Fira Code', monospace;
 	font-weight: 300;
-	background-color: var(--background);
+	background-color: var(--background, #261b17);
 	color: var(--foreground, #e4cbb3);
 	text-transform: lowercase; /* make everything aesthethically lowercase */
 	text-decoration: none;
@@ -21,11 +21,14 @@
 a:hover {
 	color: var(--accent, #e86420)
 }
+header {
+	text-align: center;
+}
 /* "Lantern" in kanji become aesthethiccer */
 h1 {
 	font-weight: 600;
 	font-size: 1.8rem;
-	text-shadow: 3px 3px 5px var(--accent, #e86420);
+	text-shadow: 3px 4px 5px var(--accent, #e86420);
 	margin: -0rem 0rem 1rem 0rem;
 }
 img {
@@ -54,7 +57,7 @@ fieldset {
 /* Mini Heading in border */
 legend {
 	font-weight: 600;
-	margin: auto;
+	margin: 0;
 }
 /* Remove bullet points */
 ul {
