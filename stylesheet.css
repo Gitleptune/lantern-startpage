@@ -2,9 +2,9 @@
 :root {
 	font-size: 17px;
 	--background: #261b17;
-	--header: #1b110e;
+	--shadow: #1b110e;
 	--accent: #e86420;
-	--text: #e4cbb3;
+	--foreground: #e4cbb3;
 }
 ::-webkit-scrollbar {
 	display: none !important;
@@ -14,7 +14,7 @@
 	font-family: 'Fira Code', monospace;
 	font-weight: 300;
 	background-color: var(--background);
-	color: var(--text, #e4cbb3);
+	color: var(--foreground, #e4cbb3);
 	text-transform: lowercase; /* make everything aesthethically lowercase */
 	text-decoration: none;
 }
@@ -42,22 +42,22 @@ main {
 	text-align: center;
 }
 /* Link Box */
-main > fieldset {
+fieldset {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	margin: 0.5rem;
 	padding: 1.35rem;
-	border: 1px solid var(--text, #e4cbb3);
-	box-shadow: 8px 8px 7px 2px var(--header, #1b110e);
+	border: 1px solid var(--foreground, #e4cbb3);
+	box-shadow: 8px 8px 7px 2px var(--shadow, #1b110e);
 }
 /* Mini Heading in border */
-main > fieldset legend {
-	margin-bottom: -0.5rem;
+legend {
 	font-weight: 600;
+	margin: auto;
 }
 /* Remove bullet points */
-main > fieldset > ul {
+ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -69,8 +69,12 @@ main > fieldset > ul {
 	* {
 		font-size: 0.98rem;
 	}
-	main > fieldset {
-		flex-basis: 54%;
-		padding: 1.25rem;
+	fieldset {
+		padding: 1rem;
+	}
+	main {
+    flex-direction: column;
+    max-width: max-content;
+    margin: auto;
 	}
 }
