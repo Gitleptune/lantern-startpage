@@ -21,20 +21,16 @@
 }
 a:visited {
 	color: var(--foreground, #e4cbb3);
-	background: var(--background);
 }
 a:hover {
 	color: var(--accent, #e86420);
 	cursor: pointer;
-	background: var(--background);
 }
 a:active {
-	color: blue;
-	background: var(--background);
+	color: var(--accent-alt, #e01d1d);
 }
 a:focus {
-	color: var(--accent-alt);
-	background: var(--background);
+	color: var(--accent-alt, #e01d1d);
 }
 header {
 	text-align: center;
@@ -43,7 +39,7 @@ header {
 h1 {
 	font-weight: 600;
 	font-size: 1.8rem;
-	text-shadow: 3px 4px 5px var(--accent, #e86420);
+	text-shadow: 3px 3px 5px var(--accent, #e86420);
 	margin: -0rem 0rem 1rem 0rem;
 }
 img {
