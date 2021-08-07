@@ -16,6 +16,7 @@
 	font-weight: 300;
 	background-color: var(--background, #261b17);
 	color: var(--foreground, #e4cbb3);
+	-webkit-tap-highlight-color: transparent;
 	text-transform: lowercase; /* make everything aesthethically lowercase */
 	text-decoration: none;
 }
