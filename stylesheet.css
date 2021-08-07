@@ -29,7 +29,7 @@ h1 {
 	margin: -0rem 0rem 1rem 0rem;
 }
 img {
-	margin: -1rem 0rem 1rem 0rem;
+	margin: 0rem 0rem 1rem 0rem;
 	filter: sepia(22%); /* make image more aestheticc */
 	max-width: 100%;
 }
@@ -61,20 +61,4 @@ ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-}
-@media (max-width: 320px) {
-  img {
-    width: 85%
-  }
-	* {
-		font-size: 0.98rem;
-	}
-	fieldset {
-		padding: 1rem;
-	}
-	main {
-    flex-direction: column;
-    max-width: max-content;
-    margin: auto;
-	}
 }
