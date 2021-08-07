@@ -18,14 +18,17 @@
 	text-transform: lowercase; /* make everything aesthethically lowercase */
 	text-decoration: none;
 }
+a:visited {
+	color: var(--foreground, #e4cbb3)
+}
 a:hover {
 	color: var(--accent, #e86420)
 }
+a:active {
+	color: yellow;
+}
 a:focus {
 	color: pink;
-}
-a:active {
-	color: green;
 }
 header {
 	text-align: center;
