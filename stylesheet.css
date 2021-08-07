@@ -63,7 +63,7 @@ div:last-child > fieldset > ul {
 	padding: 0;
 	margin: 0;
 }
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
   img {
     width: 75%
   }
