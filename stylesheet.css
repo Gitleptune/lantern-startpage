@@ -5,6 +5,7 @@
 	--shadow: #1b110e;
 	--accent: #e86420;
 	--foreground: #e4cbb3;
+	--accent-alt: #e01d1d;
 }
 ::-webkit-scrollbar {
 	display: none !important;
@@ -19,16 +20,21 @@
 	text-decoration: none;
 }
 a:visited {
-	color: var(--foreground, #e4cbb3)
+	color: var(--foreground, #e4cbb3);
+	background: var(--background);
 }
 a:hover {
-	color: var(--accent, #e86420)
+	color: var(--accent, #e86420);
+	cursor: pointer;
+	background: var(--background);
 }
 a:active {
-	color: yellow;
+	color: blue;
+	background: var(--background);
 }
 a:focus {
-	color: pink;
+	color: var(--accent-alt);
+	background: var(--background);
 }
 header {
 	text-align: center;
