@@ -23,7 +23,6 @@ a:hover {
 }
 /* "Lantern" in kanji become aesthethiccer */
 p {
-	/* text-align: center; */
 	font-weight: 600;
 	font-size: 1.8em;
 	text-shadow: 3px 3px 5px var(--onclick);
@@ -46,7 +45,6 @@ div:last-child > fieldset {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	/* text-align: center; */
 	margin: 0.5em;
 	padding: 1.35em;
 	border: 1px solid var(--text);
@@ -54,7 +52,6 @@ div:last-child > fieldset {
 }
 /* Mini Heading in border */
 div:last-child > fieldset legend {
-	/* text-align: center; */
 	margin-bottom: -0.5em;
 	font-weight: 600;
 }
@@ -64,11 +61,11 @@ div:last-child > fieldset > ul {
 	padding: 0;
 	margin: 0;
 }
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   img {
     width: 86%
   }
 	* {
-		font-size: 0.98em;
+		font-size: 0.99em;
 	}
 }
