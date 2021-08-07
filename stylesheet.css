@@ -21,6 +21,12 @@
 a:hover {
 	color: var(--accent, #e86420)
 }
+a:focus {
+	color: pink;
+}
+a:active {
+	color: green;
+}
 header {
 	text-align: center;
 }
