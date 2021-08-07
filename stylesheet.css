@@ -1,5 +1,6 @@
 @import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@5.2/distr/fira_code.css);
 :root {
+	font-size: 17px;
 	--background: #261b17;
 	--header: #1b110e;
 	--accent: #e86420;
@@ -14,9 +15,8 @@
 	font-weight: 300;
 	background-color: var(--background);
 	color: var(--text, #e4cbb3);
-	text-transform: lowercase; /* make everythign aesthethically lowercase */
+	text-transform: lowercase; /* make everything aesthethically lowercase */
 	text-decoration: none;
-	text-align: center;
 }
 a:hover {
 	color: var(--accent, #e86420)
@@ -34,14 +34,15 @@ img {
 	max-width: 100%;
 }
 /* Links boxes wrapper */
-div:last-child {
+main {
 	display: flex;
 	flex-direction:row;
 	justify-content: center;
 	flex-wrap: wrap;
+	text-align: center;
 }
 /* Link Box */
-div:last-child > fieldset {
+main > fieldset {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -51,12 +52,12 @@ div:last-child > fieldset {
 	box-shadow: 8px 8px 7px 2px var(--header, #1b110e);
 }
 /* Mini Heading in border */
-div:last-child > fieldset legend {
+main > fieldset legend {
 	margin-bottom: -0.5rem;
 	font-weight: 600;
 }
 /* Remove bullet points */
-div:last-child > fieldset > ul {
+main > fieldset > ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -68,7 +69,7 @@ div:last-child > fieldset > ul {
 	* {
 		font-size: 0.98rem;
 	}
-	div:last-child > fieldset {
+	main > fieldset {
 		flex-basis: 54%;
 		padding: 1.25rem;
 	}
