@@ -2,34 +2,34 @@
 :root {
 	--background: #261b17;
 	--header: #1b110e;
-	--onclick: #e86420;
+	--accent: #e86420;
 	--text: #e4cbb3;
 }
 ::-webkit-scrollbar {
 	display: none !important;
 	width: 0px;
 }
-*, a, body {
+* {
 	font-family: 'Fira Code', monospace;
 	font-weight: 300;
 	background-color: var(--background);
-	color: var(--text);
+	color: var(--text, #e4cbb3);
 	text-transform: lowercase; /* make everythign aesthethically lowercase */
 	text-decoration: none;
 	text-align: center;
 }
 a:hover {
-	color: var(--onclick)
+	color: var(--accent, #e86420)
 }
 /* "Lantern" in kanji become aesthethiccer */
-p {
+h1 {
 	font-weight: 600;
-	font-size: 1.8em;
-	text-shadow: 3px 3px 5px var(--onclick);
-	margin: -0em 0em 1em 0em;
+	font-size: 1.8rem;
+	text-shadow: 3px 3px 5px var(--accent, #e86420);
+	margin: -0rem 0rem 1rem 0rem;
 }
 img {
-	margin: -1em 0em 1em 0em;
+	margin: -1rem 0rem 1rem 0rem;
 	filter: sepia(22%); /* make image more aestheticc */
 	max-width: 100%;
 }
@@ -45,14 +45,14 @@ div:last-child > fieldset {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 0.5em;
-	padding: 1.35em;
-	border: 1px solid var(--text);
-	box-shadow: 8px 8px 7px 2px var(--header);
+	margin: 0.5rem;
+	padding: 1.35rem;
+	border: 1px solid var(--text, #e4cbb3);
+	box-shadow: 8px 8px 7px 2px var(--header, #1b110e);
 }
 /* Mini Heading in border */
 div:last-child > fieldset legend {
-	margin-bottom: -0.5em;
+	margin-bottom: -0.5rem;
 	font-weight: 600;
 }
 /* Remove bullet points */
@@ -63,9 +63,13 @@ div:last-child > fieldset > ul {
 }
 @media (max-width: 320px) {
   img {
-    width: 86%
+    width: 85%
   }
 	* {
-		font-size: 0.98em;
+		font-size: 0.98rem;
+	}
+	div:last-child > fieldset {
+		flex-basis: 54%;
+		padding: 1.25rem;
 	}
 }
