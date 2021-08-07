@@ -1,12 +1,16 @@
 @media (max-width: 480px) {
-  img {
-    width: 85%
-  }
 	* {
-		font-size: 0.98rem;
+		font-size: 0.95rem;
+	}
+  img {
+    width: 80%
+  }
+	h1 {
+		font-size: 1.6rem;
 	}
 	fieldset {
-		padding: 1rem;
+		padding: 0.9rem;
+		margin: 0.3rem;
 	}
 	main {
     flex-direction: column;
