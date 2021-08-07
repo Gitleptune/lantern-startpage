@@ -8,8 +8,7 @@
 	--accent-alt: #e01d1d;
 }
 ::-webkit-scrollbar {
-	display: none !important;
-	width: 0px;
+	display: none;
 }
 * {
 	font-family: 'Fira Code', monospace;
@@ -17,8 +16,9 @@
 	background-color: var(--background, #261b17);
 	color: var(--foreground, #e4cbb3);
 	-webkit-tap-highlight-color: transparent;
-	text-transform: lowercase; /* make everything aesthethically lowercase */
+	text-transform: lowercase;
 	text-decoration: none;
+	line-height: 1.3;
 }
 a:visited {
 	color: var(--foreground, #e4cbb3);
@@ -27,19 +27,17 @@ a:hover {
 	color: var(--accent, #e86420);
 	cursor: pointer;
 }
-a:active {
-	color: var(--accent-alt, #e01d1d);
-}
+a:active,
 a:focus {
-	color: var(--accent-alt, #e01d1d);
+		color: var(--accent-alt, #e01d1d);
 }
 header {
 	text-align: center;
 }
-/* "Lantern" in kanji become aesthethiccer */
+/* "Lantern" in kanji */
 h1 {
 	font-weight: 600;
-	font-size: 1.8rem;
+	font-size: 1.9rem;
 	text-shadow: 3px 3px 5px var(--accent, #e86420);
 	margin: -0rem 0rem 1rem 0rem;
 }
@@ -69,8 +67,7 @@ fieldset {
 /* Mini Heading in border */
 legend {
 	font-weight: 600;
-	margin: 0;
-	margin: 0rem 0rem -0.4rem 0rem;
+	margin: auto;
 }
 /* Remove bullet points */
 ul {
